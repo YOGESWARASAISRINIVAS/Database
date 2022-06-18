@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Header </title>
+
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+		body
+		{
+			/*background-image: linear-gradient(45deg,orange,violet);*/
+			background-image: url(https://dbms.srinivas.gq/Media/background.svg);
+			background-size: cover;
+		}
+
+		::-webkit-scrollbar 
+		{
+            width: 0px;
+        }
+		
+		.gridbox
+		{
+			display: grid;
+
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 200px;
+			/*grid-gap: 10px;*/
+
+			padding : 5px;
+            margin : 5px;
+            grid-gap : 5px;
+            /*background-color : crimson;*/
+            border-radius : 10px;
+		}
+
+		.gridbox > div
+		{
+		    padding : 5px;
+            margin : 10px;
+
+            grid-gap : 5px;
+
+            /*background-color : cyan;*/
+            border-radius : 10px;
+
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+		}
+
+		.image
+		{
+			position: static;
+			width: 160px;
+			height: 160px;
+
+			border-radius: 20px;
+		}
+
+		.psy
+		{
+			position: static;
+			width: 100px;
+			height: 100px;
+
+			border-radius: 50%;
+		}
+
+		.a4
+		{
+			position: relative;
+			font-family: 'Calistoga', cursive;
+        	font-size: 19px;
+        	letter-spacing: 3px;
+        	color: ghostwhite;
+		}
+
+		.title
+		{
+			text-align: center;
+
+			font-style: italic;
+			font-size: 50px;
+			font-family: 'Calistoga', cursive;
+			text-transform: uppercase;
+			font-weight: 600;
+			
+			letter-spacing: 5px;
+			margin: 0px;
+
+			background: url(http://db.mjnvsai.me/Media/text-back.gif) 50% 50%;
+			background-size: cover;
+
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="gridbox">
+		<div>
+			<img src="https://dbms.srinivas.gq/Media/police.png" alt="srinivas" class="image">
+		</div>
+
+		<div>
+			<marquee direction = "left" width = "100%" behavior = "scroll" >
+
+				<p class="title"> Police Station <br> DataBase </p>
+
+			</marquee>
+		</div>
+
+		<div>
+			<img src="https://dbms.srinivas.gq/Media/srinivas.jpeg" alt="myimg" class="psy">
+			<h3 class="a4"> P.Y.S.Srinivas <br> 208W1A12A4 </h3>
+		</div>
+	</div>
+
+</body>
+</html>
